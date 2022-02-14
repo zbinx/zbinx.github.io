@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>&gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/</link>
+    <description>Recent content on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Sep 2021 14:55:27 -0400</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>February Update</title>
+      <link>https://zbinx.github.io/posts/februaryblog/</link>
+      <pubDate>Sun, 13 Feb 2022 23:08:46 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/februaryblog/</guid>
+      <description>Been a little while since I posted on this website. Been a busy couple months but I still managed to keep my TryHackMe streak running strong, 1 day away from 100 days of hacking!
+Updates:
+  Set up a Rasberry-pi 4 NAS server running OpenMediaVault hosting a file server ( samba ).
+  Set up a dedicated Valheim server using an amazing linux script fully coded in Bash.</description>
+    </item>
+    
+    <item>
+      <title>Hugo cheatsheet and commands</title>
+      <link>https://zbinx.github.io/posts/hugo-cheatsheet/</link>
+      <pubDate>Sun, 28 Nov 2021 01:05:12 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/hugo-cheatsheet/</guid>
+      <description> Basic commands   Create new post: hugo new posts/nameofpost.md
+  Create new post in different directory: hugo new writeups/2019/nameofpost.md
+  Testing website with live updates: hugo server -D
+  Images  Store your images in the content/images directory  </description>
+    </item>
+    
+    <item>
+      <title>Virtualbox Guest Additions install / guide</title>
+      <link>https://zbinx.github.io/posts/vboxguestadds/</link>
+      <pubDate>Thu, 25 Nov 2021 11:31:28 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/vboxguestadds/</guid>
+      <description>What is VirtualBox guest additions? Guest Additions is simply just an add-on for your VirtualBox application so you can fully utilize vbox to its full potential. Some people think that once you install virtualbox and the OS of your choice, that you are then good to go. If you do not install guest additions on top of your new OS vbox, then you might not have full resolution, dual monitor support, full screen, copy / paste etc&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>TryHackMe room: Attacktive Directory - writeup</title>
+      <link>https://zbinx.github.io/posts/thmroom_ad/</link>
+      <pubDate>Sun, 03 Oct 2021 17:48:49 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/thmroom_ad/</guid>
+      <description>TryHackMe room: Attacktive Directory  99% of Corporate networks run off of AD. But can you exploit a vulnerable Domain Controller?
+ Task 1: Enumeration   create temporary alias for IP address, rather than typing it out every time.
+export ip=10.10.89.177
+  run nmap of target:
+nmap -sC -sV -oN nmap/initial.txt $ip
+   1. What tool will allow us to enumerate port 139/445? Answer: enum4linux 2. What is the NetBIOS-Domain Name of the machine?</description>
+    </item>
+    
+    <item>
+      <title>THM room: Active Directory Basics</title>
+      <link>https://zbinx.github.io/posts/adbasics/</link>
+      <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/adbasics/</guid>
+      <description>Active Directory Basics  What is Active directory? Active Directory is a collection of machines and servers connected inside of domains, that are a collective part of a bigger forest of domains, that make up the Active Directory network. Active Directory contains many functioning bits and pieces, a majority of which we will be covering in the upcoming tasks. To outline what we&amp;rsquo;ll be covering take a look over this list of Active Directory components and become familiar with the various pieces of Active Directory:</description>
+    </item>
+    
+    <item>
+      <title>TryHackMe walkthrough for room: Nessus</title>
+      <link>https://zbinx.github.io/posts/nessus/</link>
+      <pubDate>Fri, 17 Sep 2021 16:14:32 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/nessus/</guid>
+      <description>TryHackMe room: Nessus &amp;ldquo;Learn how to set up and use Nessus, a popular vulnerability scanner.&amp;rdquo; Nessus vulnerability scanner is exactly what you think is its! A vulnerability scanner! It uses techniques similar to Nmap to find and report vulnerabilities, which are then, presented in a nice GUI for us to look at. Nessus is different from other scanners as it doesn&amp;rsquo;t make assumptions when scanning, like assuming the web application is running on port 80 for instance.</description>
+    </item>
+    
+    <item>
+      <title>Fix: code block unreadable due to config</title>
+      <link>https://zbinx.github.io/posts/highlightfix/</link>
+      <pubDate>Thu, 16 Sep 2021 15:34:45 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/highlightfix/</guid>
+      <description>How to fix the unreadable code block that happens in certain themes / configs:  With certain themes you may encounter an issue where you will have unreadable code block highlighting.
+ Add the following code at the end of your config.toml  [markup] [markup.highlight] anchorLineNos = false codeFences = true guessSyntax = false hl_Lines = &amp;#39;&amp;#39; lineAnchors = &amp;#39;&amp;#39; lineNoStart = 1 lineNos = false lineNumbersInTable = true noClasses = true style = &amp;#39;vim&amp;#39; tabWidth = 4 pygmentsStyle = &amp;#34;vim&amp;#34;  Edit the following 2 lines:  style = &amp;#39;vim&amp;#39; pygmentsStyle = &amp;#34;vim&amp;#34; You can change these to other chroma styles but the vim one worked best for my current config.</description>
+    </item>
+    
+    <item>
+      <title>How to properly deploy public hugo website</title>
+      <link>https://zbinx.github.io/posts/hugodeploy/</link>
+      <pubDate>Thu, 16 Sep 2021 09:13:22 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/hugodeploy/</guid>
+      <description>Deploying Hugo public site via github hosting  define Hugo: Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+ At this point you should have 2 repos for your hugo website uploaded to github.
+ source code repo public deployment repo  make directories for both repos locally.
+mkdir sourceCodeHugoSite mkdir publicDeploymentHugoSite Then clone them into their respective directories.</description>
+    </item>
+    
+    <item>
+      <title>Cheatsheets</title>
+      <link>https://zbinx.github.io/cheatsheets/cheatsheets/</link>
+      <pubDate>Wed, 15 Sep 2021 21:58:46 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/cheatsheets/cheatsheets/</guid>
+      <description>cd /markdown
+cd /git
+cd /bash</description>
+    </item>
+    
+    <item>
+      <title>How to fix git issue with deploying hugo public site</title>
+      <link>https://zbinx.github.io/posts/how_fix_git_issue/</link>
+      <pubDate>Tue, 14 Sep 2021 21:25:25 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/how_fix_git_issue/</guid>
+      <description>I kept breaking my site deployment because of an issue with handling the multiple repos and folders from multiple computers. To summarize: When making a hugo deployment site, you should have 2 separate folders. 1 for the source code and the other for public deployment.
+ Clone both repos to their own folders locally. git pull inside both so you are up to date with the remote repo. Once changes are made in source code, push the changes.</description>
+    </item>
+    
+    <item>
+      <title>Git command to save credentials when push/pull</title>
+      <link>https://zbinx.github.io/posts/github_login9-14-21/</link>
+      <pubDate>Tue, 14 Sep 2021 15:21:46 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/github_login9-14-21/</guid>
+      <description>How to update git to save your credentials when pulling / pushing? Run the following command:
+git config --global credential.helper store Attention: This method saves the credentials in plaintext on your PC&amp;rsquo;s disk. Everyone on your computer can access it, e.g. malicious NPM modules. The credentials are stored in a file on the disk, with the disk permissions of &amp;ldquo;just user readable/writable&amp;rdquo; but still in plaintext.
+If the password is changed at some point, your git pull / push will fail and git will then remove the offending user+password from the ~/.</description>
+    </item>
+    
+    <item>
+      <title>/projects</title>
+      <link>https://zbinx.github.io/projects/</link>
+      <pubDate>Mon, 13 Sep 2021 14:55:27 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/projects/</guid>
+      <description> Raspberry pi NAS file server and SSD mod. Malware analysis lab custom pentesting tools Linux CLI , TUI and GUI programs  </description>
+    </item>
+    
+    <item>
+      <title>/about</title>
+      <link>https://zbinx.github.io/about/</link>
+      <pubDate>Mon, 13 Sep 2021 14:13:03 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/about/</guid>
+      <description>This website was born out of my passion for all things Linux, coding and infosec related. It will be a repository for my projects, ideas, guides and infosec research.
+echo h4ck.th3.pl4n3t
+  </description>
+    </item>
+    
+    <item>
+      <title>Markdown syntax example post</title>
+      <link>https://zbinx.github.io/posts/blog1/</link>
+      <pubDate>Mon, 13 Sep 2021 00:54:36 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/blog1/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

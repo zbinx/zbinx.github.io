@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>H4ckery.B1nx on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/authors/h4ckery.b1nx/</link>
+    <description>Recent content in H4ckery.B1nx on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Feb 2022 23:08:46 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/authors/h4ckery.b1nx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>February Update</title>
+      <link>https://zbinx.github.io/posts/februaryblog/</link>
+      <pubDate>Sun, 13 Feb 2022 23:08:46 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/februaryblog/</guid>
+      <description>Been a little while since I posted on this website. Been a busy couple months but I still managed to keep my TryHackMe streak running strong, 1 day away from 100 days of hacking!
+Updates:
+  Set up a Rasberry-pi 4 NAS server running OpenMediaVault hosting a file server ( samba ).
+  Set up a dedicated Valheim server using an amazing linux script fully coded in Bash.</description>
+    </item>
+    
+    <item>
+      <title>THM room: Active Directory Basics</title>
+      <link>https://zbinx.github.io/posts/adbasics/</link>
+      <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/adbasics/</guid>
+      <description>Active Directory Basics  What is Active directory? Active Directory is a collection of machines and servers connected inside of domains, that are a collective part of a bigger forest of domains, that make up the Active Directory network. Active Directory contains many functioning bits and pieces, a majority of which we will be covering in the upcoming tasks. To outline what we&amp;rsquo;ll be covering take a look over this list of Active Directory components and become familiar with the various pieces of Active Directory:</description>
+    </item>
+    
+    <item>
+      <title>TryHackMe walkthrough for room: Nessus</title>
+      <link>https://zbinx.github.io/posts/nessus/</link>
+      <pubDate>Fri, 17 Sep 2021 16:14:32 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/nessus/</guid>
+      <description>TryHackMe room: Nessus &amp;ldquo;Learn how to set up and use Nessus, a popular vulnerability scanner.&amp;rdquo; Nessus vulnerability scanner is exactly what you think is its! A vulnerability scanner! It uses techniques similar to Nmap to find and report vulnerabilities, which are then, presented in a nice GUI for us to look at. Nessus is different from other scanners as it doesn&amp;rsquo;t make assumptions when scanning, like assuming the web application is running on port 80 for instance.</description>
+    </item>
+    
+    <item>
+      <title>Fix: code block unreadable due to config</title>
+      <link>https://zbinx.github.io/posts/highlightfix/</link>
+      <pubDate>Thu, 16 Sep 2021 15:34:45 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/highlightfix/</guid>
+      <description>How to fix the unreadable code block that happens in certain themes / configs:  With certain themes you may encounter an issue where you will have unreadable code block highlighting.
+ Add the following code at the end of your config.toml  [markup] [markup.highlight] anchorLineNos = false codeFences = true guessSyntax = false hl_Lines = &amp;#39;&amp;#39; lineAnchors = &amp;#39;&amp;#39; lineNoStart = 1 lineNos = false lineNumbersInTable = true noClasses = true style = &amp;#39;vim&amp;#39; tabWidth = 4 pygmentsStyle = &amp;#34;vim&amp;#34;  Edit the following 2 lines:  style = &amp;#39;vim&amp;#39; pygmentsStyle = &amp;#34;vim&amp;#34; You can change these to other chroma styles but the vim one worked best for my current config.</description>
+    </item>
+    
+    <item>
+      <title>How to properly deploy public hugo website</title>
+      <link>https://zbinx.github.io/posts/hugodeploy/</link>
+      <pubDate>Thu, 16 Sep 2021 09:13:22 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/hugodeploy/</guid>
+      <description>Deploying Hugo public site via github hosting  define Hugo: Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+ At this point you should have 2 repos for your hugo website uploaded to github.
+ source code repo public deployment repo  make directories for both repos locally.
+mkdir sourceCodeHugoSite mkdir publicDeploymentHugoSite Then clone them into their respective directories.</description>
+    </item>
+    
+  </channel>
+</rss>

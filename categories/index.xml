@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/categories/</link>
+    <description>Recent content in Categories on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Feb 2022 23:08:46 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>blog</title>
+      <link>https://zbinx.github.io/categories/blog/</link>
+      <pubDate>Sun, 13 Feb 2022 23:08:46 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cheatsheet</title>
+      <link>https://zbinx.github.io/categories/cheatsheet/</link>
+      <pubDate>Sun, 28 Nov 2021 01:05:12 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/cheatsheet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://zbinx.github.io/categories/hugo/</link>
+      <pubDate>Sun, 28 Nov 2021 01:05:12 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Directory</title>
+      <link>https://zbinx.github.io/categories/active-directory/</link>
+      <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/active-directory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Active Directory Basics</title>
+      <link>https://zbinx.github.io/categories/active-directory-basics/</link>
+      <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/active-directory-basics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tryhackme</title>
+      <link>https://zbinx.github.io/categories/tryhackme/</link>
+      <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/tryhackme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nessus</title>
+      <link>https://zbinx.github.io/categories/nessus/</link>
+      <pubDate>Fri, 17 Sep 2021 16:14:32 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/nessus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>walkthrough</title>
+      <link>https://zbinx.github.io/categories/walkthrough/</link>
+      <pubDate>Fri, 17 Sep 2021 16:14:32 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/walkthrough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://zbinx.github.io/categories/git/</link>
+      <pubDate>Thu, 16 Sep 2021 09:13:22 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>public deployment</title>
+      <link>https://zbinx.github.io/categories/public-deployment/</link>
+      <pubDate>Thu, 16 Sep 2021 09:13:22 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/public-deployment/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

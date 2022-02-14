@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>february 2022 on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/tags/february-2022/</link>
+    <description>Recent content in february 2022 on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Feb 2022 23:08:46 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/tags/february-2022/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>February Update</title>
+      <link>https://zbinx.github.io/posts/februaryblog/</link>
+      <pubDate>Sun, 13 Feb 2022 23:08:46 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/februaryblog/</guid>
+      <description>Been a little while since I posted on this website. Been a busy couple months but I still managed to keep my TryHackMe streak running strong, 1 day away from 100 days of hacking!
+Updates:
+  Set up a Rasberry-pi 4 NAS server running OpenMediaVault hosting a file server ( samba ).
+  Set up a dedicated Valheim server using an amazing linux script fully coded in Bash.</description>
+    </item>
+    
+  </channel>
+</rss>

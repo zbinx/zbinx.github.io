@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>public deployment on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/categories/public-deployment/</link>
+    <description>Recent content in public deployment on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Sep 2021 09:13:22 -0400</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/categories/public-deployment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to properly deploy public hugo website</title>
+      <link>https://zbinx.github.io/posts/hugodeploy/</link>
+      <pubDate>Thu, 16 Sep 2021 09:13:22 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/hugodeploy/</guid>
+      <description>Deploying Hugo public site via github hosting  define Hugo: Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+ At this point you should have 2 repos for your hugo website uploaded to github.
+ source code repo public deployment repo  make directories for both repos locally.
+mkdir sourceCodeHugoSite mkdir publicDeploymentHugoSite Then clone them into their respective directories.</description>
+    </item>
+    
+  </channel>
+</rss>

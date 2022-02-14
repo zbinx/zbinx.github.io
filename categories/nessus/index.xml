@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nessus on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/categories/nessus/</link>
+    <description>Recent content in nessus on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 Sep 2021 16:14:32 -0400</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/categories/nessus/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TryHackMe walkthrough for room: Nessus</title>
+      <link>https://zbinx.github.io/posts/nessus/</link>
+      <pubDate>Fri, 17 Sep 2021 16:14:32 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/nessus/</guid>
+      <description>TryHackMe room: Nessus &amp;ldquo;Learn how to set up and use Nessus, a popular vulnerability scanner.&amp;rdquo; Nessus vulnerability scanner is exactly what you think is its! A vulnerability scanner! It uses techniques similar to Nmap to find and report vulnerabilities, which are then, presented in a nice GUI for us to look at. Nessus is different from other scanners as it doesn&amp;rsquo;t make assumptions when scanning, like assuming the web application is running on port 80 for instance.</description>
+    </item>
+    
+  </channel>
+</rss>

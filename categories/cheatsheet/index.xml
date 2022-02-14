@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cheatsheet on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/categories/cheatsheet/</link>
+    <description>Recent content in cheatsheet on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Nov 2021 01:05:12 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/categories/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo cheatsheet and commands</title>
+      <link>https://zbinx.github.io/posts/hugo-cheatsheet/</link>
+      <pubDate>Sun, 28 Nov 2021 01:05:12 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/hugo-cheatsheet/</guid>
+      <description> Basic commands   Create new post: hugo new posts/nameofpost.md
+  Create new post in different directory: hugo new writeups/2019/nameofpost.md
+  Testing website with live updates: hugo server -D
+  Images  Store your images in the content/images directory  </description>
+    </item>
+    
+  </channel>
+</rss>

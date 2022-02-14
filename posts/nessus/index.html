@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="h4ckery_b1nx">
+    <meta name="description" content="TryHackMe walkthrough for room: Nessus">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TryHackMe walkthrough for room: Nessus"/>
+<meta name="twitter:description" content="TryHackMe walkthrough for room: Nessus"/>
+
+    <meta property="og:title" content="TryHackMe walkthrough for room: Nessus" />
+<meta property="og:description" content="TryHackMe walkthrough for room: Nessus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zbinx.github.io/posts/nessus/" />
+<meta property="article:published_time" content="2021-09-17T16:14:32-04:00" />
+<meta property="article:modified_time" content="2021-09-17T16:14:32-04:00" />
+
+
+    <title>
+  TryHackMe walkthrough for room: Nessus · &gt; h4ckery.b1nx
+</title>
+
+    
+      <link rel="canonical" href="https://zbinx.github.io/posts/nessus/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.8e2b2510f60e1715eae08d113a808dcdaf17f6f711edb9e969be38d0074d240d.css" integrity="sha256-jislEPYOFxXq4I0ROoCNza8X9vcR7bnpab440AdNJA0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      &gt; h4ckery.b1nx
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">/Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">/Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">/About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://zbinx.github.io/posts/nessus/">
+              TryHackMe walkthrough for room: Nessus
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-09-17T16:14:32-04:00'>
+                September 17, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/h4ckery.b1nx/">h4ckery.b1nx</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/tryhackme/">tryhackme</a>
+      <span class="separator">•</span>
+    <a href="/categories/walkthrough/">walkthrough</a>
+      <span class="separator">•</span>
+    <a href="/categories/nessus/">nessus</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/tryhackme/">tryhackme</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/walkthrough/">walkthrough</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/nessus/">nessus</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="tryhackme-room-nessus">TryHackMe room: Nessus</h1>
+<h2 id="learn-how-to-set-up-and-use-nessus-a-popular-vulnerability-scanner">&ldquo;Learn how to set up and use Nessus, a popular vulnerability scanner.&rdquo;</h2>
+<p>Nessus vulnerability scanner is exactly what you think is its! A vulnerability scanner!
+It uses techniques similar to Nmap to find and report vulnerabilities, which are then, presented in a nice GUI for us to look at.
+Nessus is different from other scanners as it doesn&rsquo;t make assumptions when scanning,
+like assuming the web application is running on port 80 for instance.</p>
+<hr>
+<h2 id="installation">Installation</h2>
+<p>Warning: Do not install Nessus on the THM AttackBox. It will not work, as there&rsquo;s no sufficient space.</p>
+<blockquote>
+<p><a href="https://docs.tenable.com/nessus/Content/GettingStarted.htm">https://docs.tenable.com/nessus/Content/GettingStarted.htm</a></p>
+</blockquote>
+<p>I am installing on parrotOS , a debian based distro so I went with the Ubuntu.deb package for install with Nessus Essential version.</p>
+<blockquote>
+<p><a href="https://www.tenable.com/downloads/nessus?loginAttempted=true">https://www.tenable.com/downloads/nessus?loginAttempted=true</a></p>
+</blockquote>
+<p>Once downloaded , open up terminal and navigate to folder with the .deb package and install with:</p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sudo dpkg -i Nessus-_amd64.deb
+
+</code></pre></div><p>Then start the service with the cmd:</p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">/bin/systemctl start nessusd.service
+
+</code></pre></div><p><strong>Dont forget to activate your nessus</strong>. You need an email for this.</p>
+<p><a href="https://www.tenable.com/products/nessus/nessus-essentials">https://www.tenable.com/products/nessus/nessus-essentials</a></p>
+<p>Go through the next couple steps with hitting ok and accepting , logging in ETC&hellip; self explanatory at this point until you finally get to the browser page where Nessus dashboard lives.</p>
+<hr>
+<h2 id="navigation-and-scans">Navigation and Scans</h2>
+<p><strong>What is the name of the button which is used to launch a scan?</strong></p>
+<blockquote>
+<p>new scan</p>
+</blockquote>
+<p><strong>What side menu option allows us to create custom templates?</strong></p>
+<blockquote>
+<p>policies</p>
+</blockquote>
+<p><strong>What menu allows us to change plugin properties such as hiding them or changing their severity?</strong></p>
+<blockquote>
+<p>plugin rules</p>
+</blockquote>
+<p><strong>In the &lsquo;Scan Templates&rsquo; section after clicking on &lsquo;New Scan&rsquo;, what scan allows us to see simply what hosts are alive?</strong></p>
+<blockquote>
+<p>host discovery</p>
+</blockquote>
+<p><strong>One of the most useful scan types, which is considered to be &lsquo;suitable for any host&rsquo;?</strong></p>
+<blockquote>
+<p>basic network scan</p>
+</blockquote>
+<p><strong>What scan allows you to &lsquo;Authenticate to hosts and enumerate missing updates&rsquo;?</strong></p>
+<blockquote>
+<p>credential patch audit</p>
+</blockquote>
+<p><strong>What scan is specifically used for scanning Web Applications?</strong></p>
+<blockquote>
+<p>web application test</p>
+</blockquote>
+<hr>
+<h2 id="scanning">Scanning!</h2>
+<p><strong>Create a new &lsquo;Basic Network Scan&rsquo; targeting the deployed VM. What option can we set under &lsquo;BASIC&rsquo; (on the left) to set a time for this scan to run? This can be very useful when network congestion is an issue.</strong></p>
+<blockquote>
+<p>schedule</p>
+</blockquote>
+<p><strong>Under &lsquo;DISCOVERY&rsquo; (on the left) set the &lsquo;Scan Type&rsquo; to cover ports 1-65535. What is this type called?</strong></p>
+<blockquote>
+<p>port scan (all ports)</p>
+</blockquote>
+<p><strong>What &lsquo;Scan Type&rsquo; can we change to under &lsquo;ADVANCED&rsquo; for lower bandwidth connection?</strong></p>
+<blockquote>
+<p>scan low bandwidth links</p>
+</blockquote>
+<p><strong>After the scan completes, which &lsquo;Vulnerability&rsquo; in the &lsquo;Port scanners&rsquo; family can we view the details of to see the open ports on this host?</strong></p>
+<blockquote>
+<p>Nessus SYN scanner</p>
+</blockquote>
+<p><strong>What Apache HTTP Server Version is reported by Nessus?</strong></p>
+<blockquote>
+<p>2.4.99</p>
+</blockquote>
+<hr>
+<h2 id="scanning-a-web-application">Scanning a Web Application!</h2>
+<p><strong>What is the plugin id of the plugin that determines the HTTP server type and version?</strong></p>
+<blockquote>
+<p>10107</p>
+</blockquote>
+<p><strong>What authentication page is discovered by the scanner that transmits credentials in cleartext?</strong></p>
+<blockquote>
+<p>login.php</p>
+</blockquote>
+<p><strong>What is the file extension of the config backup?</strong></p>
+<blockquote>
+<p>.bak</p>
+</blockquote>
+<p><strong>Which directory contains example documents? (This will be in a php directory)</strong></p>
+<blockquote>
+<p>/external/phpids/0.6/docs/examples/</p>
+</blockquote>
+<p>What vulnerability is this application susceptible to that is associated with X-Frame-Options?**</p>
+<blockquote>
+<p>clickjacking</p>
+</blockquote>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>*If you are not willing to be a fool, you can't become a master.*</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2022
+         h4ckery_b1nx 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.a350362441276ec5c1671926420497bb8e52b63ead1d51d3c9bc4342d0039526.js" integrity="sha256-o1A2JEEnbsXBZxkmQgSXu45Stj6tHVHTybxDQtADlSY="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tryhackme on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/categories/tryhackme/</link>
+    <description>Recent content in tryhackme on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Sep 2021 23:06:34 -0400</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/categories/tryhackme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>THM room: Active Directory Basics</title>
+      <link>https://zbinx.github.io/posts/adbasics/</link>
+      <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/adbasics/</guid>
+      <description>Active Directory Basics  What is Active directory? Active Directory is a collection of machines and servers connected inside of domains, that are a collective part of a bigger forest of domains, that make up the Active Directory network. Active Directory contains many functioning bits and pieces, a majority of which we will be covering in the upcoming tasks. To outline what we&amp;rsquo;ll be covering take a look over this list of Active Directory components and become familiar with the various pieces of Active Directory:</description>
+    </item>
+    
+    <item>
+      <title>TryHackMe walkthrough for room: Nessus</title>
+      <link>https://zbinx.github.io/posts/nessus/</link>
+      <pubDate>Fri, 17 Sep 2021 16:14:32 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/nessus/</guid>
+      <description>TryHackMe room: Nessus &amp;ldquo;Learn how to set up and use Nessus, a popular vulnerability scanner.&amp;rdquo; Nessus vulnerability scanner is exactly what you think is its! A vulnerability scanner! It uses techniques similar to Nmap to find and report vulnerabilities, which are then, presented in a nice GUI for us to look at. Nessus is different from other scanners as it doesn&amp;rsquo;t make assumptions when scanning, like assuming the web application is running on port 80 for instance.</description>
+    </item>
+    
+  </channel>
+</rss>

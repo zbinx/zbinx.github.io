@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="h4ckery_b1nx">
+    <meta name="description" content="THM room: Active Directory Basics">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="THM room: Active Directory Basics"/>
+<meta name="twitter:description" content="THM room: Active Directory Basics"/>
+
+    <meta property="og:title" content="THM room: Active Directory Basics" />
+<meta property="og:description" content="THM room: Active Directory Basics" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zbinx.github.io/posts/adbasics/" />
+<meta property="article:published_time" content="2021-09-19T23:06:34-04:00" />
+<meta property="article:modified_time" content="2021-09-19T23:06:34-04:00" />
+
+
+    <title>
+  THM room: Active Directory Basics · &gt; h4ckery.b1nx
+</title>
+
+    
+      <link rel="canonical" href="https://zbinx.github.io/posts/adbasics/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.8e2b2510f60e1715eae08d113a808dcdaf17f6f711edb9e969be38d0074d240d.css" integrity="sha256-jislEPYOFxXq4I0ROoCNza8X9vcR7bnpab440AdNJA0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      &gt; h4ckery.b1nx
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">/Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">/Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">/About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://zbinx.github.io/posts/adbasics/">
+              THM room: Active Directory Basics
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-09-19T23:06:34-04:00'>
+                September 19, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/h4ckery.b1nx/">H4ckery.B1nx</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/tryhackme/">tryhackme</a>
+      <span class="separator">•</span>
+    <a href="/categories/active-directory/">Active Directory</a>
+      <span class="separator">•</span>
+    <a href="/categories/active-directory-basics/">Active Directory Basics</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/tryhackme/">tryhackme</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/active-directory/">Active Directory</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/active-directory-basics/">Active Directory Basics</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="active-directory-basics">Active Directory Basics</h1>
+<hr>
+<h3 id="what-is-active-directory">What is Active directory?</h3>
+<p>Active Directory is a collection of machines and servers connected inside of domains, that are a collective part of a bigger forest of domains, that make up the Active Directory network. Active Directory contains many functioning bits and pieces, a majority of which we will be covering in the upcoming tasks. To outline what we&rsquo;ll be covering take a look over this list of Active Directory components and become familiar with the various pieces of Active Directory:</p>
+<p>Domain Controllers
+Forests, Trees, Domains
+Users + Groups
+Trusts
+Policies
+Domain Services
+All of these parts of Active Directory come together to make a big network of machines and servers. Now that we know what Active Directory is let&rsquo;s talk about the why?</p>
+<h3 id="why-use-active-directory--">Why use Active Directory? -</h3>
+<p>The majority of large companies use Active Directory because it allows for the control and monitoring of their user&rsquo;s computers through a single domain controller. It allows a single user to sign in to any computer on the active directory network and have access to his or her stored files and folders in the server, as well as the local storage on that machine. This allows for any user in the company to use any machine that the company owns, without having to set up multiple users on a machine. Active Directory does it all for you.</p>
+<p>Now that we know the what and the why of Active Directory let&rsquo;s move on to how it works and functions.</p>
+<hr>
+<h1 id="physical-active-directory">Physical Active Directory:</h1>
+<h3 id="domain-controllers">Domain Controllers</h3>
+<ul>
+<li>AD DS (Active Directory Domain Services)</li>
+<li>holds the AD DS data store</li>
+<li>handles authentication and authorization services</li>
+<li>replicate updates from other domain controllers in the forest</li>
+<li>Allows admin access to manage domain resources</li>
+</ul>
+<h3 id="ad-ds-data-store">AD DS Data Store</h3>
+<p>Below is an outline of some of the contents and characteristics of the AD DS Data Store:</p>
+<ul>
+<li>Contains the NTDS.dit - a database that contains all of the information of an Active Directory domain controller as well as password hashes for domain users.</li>
+<li>Stored by default in %SystemRoot%\NTDS</li>
+<li>accessible only by the domain controller</li>
+</ul>
+<p><em>Question:</em></p>
+<ol>
+<li><strong>What database does the AD DS contain?</strong></li>
+</ol>
+<blockquote>
+<p>NTDS.dit</p>
+</blockquote>
+<ol start="2">
+<li><strong>Where is the NTDS.dit store?</strong></li>
+</ol>
+<blockquote>
+<p>%SystemRoot%\NTDS</p>
+</blockquote>
+<ol start="3">
+<li><strong>What type of machine can be a domain controller?</strong></li>
+</ol>
+<blockquote>
+<p>windows server</p>
+</blockquote>
+<hr>
+<h1 id="the-forest">The Forest</h1>
+<p>The forest is the container that holds all of the other bits and pieces of the network together.</p>
+<h3 id="forest-overview">Forest Overview</h3>
+<p>A forest is a collection of one or more domain trees inside of an Active Directory network. It is what categorizes the parts of the network as a whole.</p>
+<p>The Forest consists of these parts which we will go into farther detail with later:</p>
+<p>Trees - A hierarchy of domains in Active Directory Domain Services
+Domains - Used to group and manage objects
+Organizational Units (OUs) - Containers for groups, computers, users, printers and other OUs
+Trusts - Allows users to access resources in other domains
+Objects - users, groups, printers, computers, shares
+Domain Services - DNS Server, LLMNR, IPv6
+Domain Schema - Rules for object creation</p>
+<p><em>Questions</em></p>
+<ol>
+<li><strong>What is the term for a hierarchy of domains in a network?</strong></li>
+</ol>
+<blockquote>
+<p>tree</p>
+</blockquote>
+<ol start="2">
+<li><strong>What is the term for the rules for object creation?</strong></li>
+</ol>
+<blockquote>
+<p>domain schema</p>
+</blockquote>
+<ol start="3">
+<li><strong>What is the term for containers for groups, computers, users, printers, and other OUs?</strong></li>
+</ol>
+<blockquote>
+<p>organizational units</p>
+</blockquote>
+<hr>
+<h1 id="users--groups">Users + Groups</h1>
+<h3 id="users-overview">Users Overview</h3>
+<p>The four types of users are:</p>
+<ul>
+<li>
+<p>Domain Admins - This is the big boss: they control the domains and are the only ones with access to the domain controller.</p>
+</li>
+<li>
+<p>Service Accounts (Can be Domain Admins) - These are for the most part never used except for service maintenance, they are required by Windows for services such as SQL to pair a service with a service account</p>
+</li>
+<li>
+<p>Local Administrators - These users can make changes to local machines as an administrator and may even be able to control other normal users, but they cannot access the domain controller</p>
+</li>
+<li>
+<p>Domain Users - These are your everyday users. They can log in on the machines they have the authorization to access and may have local administrator rights to machines depending on the organization.</p>
+</li>
+</ul>
+<h3 id="groups-overview">Groups Overview</h3>
+<ul>
+<li>
+<p>Security Groups: These groups are used to specify permissions for a large number of users</p>
+</li>
+<li>
+<p>Distribution Groups: These groups are used to specify email distribution lists. As an attacker these groups are less beneficial to us but can still be beneficial in enumeration.</p>
+</li>
+</ul>
+<p><em>Questions</em></p>
+<ol>
+<li><strong>Which type of groups specify user permissions?</strong></li>
+</ol>
+<blockquote>
+<p>security groups</p>
+</blockquote>
+<ol start="2">
+<li><strong>Which group contains all workstations and servers joined to the domain?</strong></li>
+</ol>
+<blockquote>
+<p>domain computers</p>
+</blockquote>
+<ol start="3">
+<li><strong>Which group can publish certificates to the directory?</strong></li>
+</ol>
+<blockquote>
+<p>cert publishers</p>
+</blockquote>
+<ol start="4">
+<li><strong>Which user can make changes to a local machine but not to a domain controller?</strong></li>
+</ol>
+<blockquote>
+<p>local administrators</p>
+</blockquote>
+<ol start="5">
+<li><strong>Which group has their passwords replicated to read-only domain controllers?</strong></li>
+</ol>
+<blockquote>
+<p>allowed RODC Password Replication Group</p>
+</blockquote>
+<hr>
+<h1 id="trusts--policies">Trusts + Policies</h1>
+<p><em>Questions</em></p>
+<ol>
+<li><strong>What type of trust flows from a trusting domain to a trusted domain?</strong></li>
+</ol>
+<blockquote>
+<p>directional</p>
+</blockquote>
+<ol start="2">
+<li><strong>What type of trusts expands to include other trusted domains?</strong></li>
+</ol>
+<blockquote>
+<p>transitive</p>
+</blockquote>
+<hr>
+<h1 id="active-direcotry-domain-services--authentication">Active Direcotry Domain Services + Authentication</h1>
+<p><em>Questions</em></p>
+<ol>
+<li><strong>What type of authentication uses tickets?</strong></li>
+</ol>
+<blockquote>
+<p>kerberos</p>
+</blockquote>
+<ol start="2">
+<li>**What domain service can create, validate, and revoke public key certificates?</li>
+</ol>
+<blockquote>
+<p>certificate services</p>
+</blockquote>
+<hr>
+<h1 id="ad-in-the-cloud">AD in the Cloud</h1>
+<p><em>Questions</em></p>
+<ol>
+<li><strong>What is the Azure AD equivalent of LDAP?</strong></li>
+</ol>
+<blockquote>
+<p>rest apis</p>
+</blockquote>
+<ol start="2">
+<li><strong>What is the Azure AD equivalent of Domains and Forests?</strong></li>
+</ol>
+<blockquote>
+<p>tenants</p>
+</blockquote>
+<ol start="3">
+<li><strong>What is the Windows Server AD equivalent of Guests?</strong></li>
+</ol>
+<blockquote>
+<p>trusts</p>
+</blockquote>
+<hr>
+<h1 id="hands-on-lab">Hands-on Lab</h1>
+<p>Cheatsheet here: <a href="https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993">https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993</a></p>
+<ol start="2">
+<li>What is the name of the Windows 10 operating system?</li>
+</ol>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Get-NetComputer -fulldata | select operatingsystem
+</code></pre></div><blockquote>
+<p>Windows 10 Enterprise Evaluation</p>
+</blockquote>
+<ol start="3">
+<li>What is the second “Admin” name?</li>
+</ol>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Get-NetUser | select cn
+
+</code></pre></div><blockquote>
+<p>Admin2</p>
+</blockquote>
+<ol start="4">
+<li>Which group has a capital “V” in the group name?</li>
+</ol>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">net localgroup
+
+</code></pre></div><blockquote>
+<p>Hyper-V Administrators</p>
+</blockquote>
+<ol start="5">
+<li>When was the password last set for the SQLService user?</li>
+</ol>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Get-ADUser -identity SQLService -properties *
+</code></pre></div><blockquote>
+<p>5/13/2020 8:26:58 PM</p>
+</blockquote>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>*If you are not willing to be a fool, you can't become a master.*</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2022
+         h4ckery_b1nx 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.a350362441276ec5c1671926420497bb8e52b63ead1d51d3c9bc4342d0039526.js" integrity="sha256-o1A2JEEnbsXBZxkmQgSXu45Stj6tHVHTybxDQtADlSY="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

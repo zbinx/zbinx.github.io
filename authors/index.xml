@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/authors/</link>
+    <description>Recent content in Authors on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 13 Feb 2022 23:08:46 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>H4ckery.B1nx</title>
+      <link>https://zbinx.github.io/authors/h4ckery.b1nx/</link>
+      <pubDate>Sun, 13 Feb 2022 23:08:46 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/authors/h4ckery.b1nx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>h4ckery b1nx</title>
+      <link>https://zbinx.github.io/authors/h4ckery-b1nx/</link>
+      <pubDate>Sun, 28 Nov 2021 01:05:12 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/authors/h4ckery-b1nx/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

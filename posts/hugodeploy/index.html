@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="h4ckery_b1nx">
+    <meta name="description" content="How to properly deploy public hugo website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to properly deploy public hugo website"/>
+<meta name="twitter:description" content="How to properly deploy public hugo website"/>
+
+    <meta property="og:title" content="How to properly deploy public hugo website" />
+<meta property="og:description" content="How to properly deploy public hugo website" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zbinx.github.io/posts/hugodeploy/" />
+<meta property="article:published_time" content="2021-09-16T09:13:22-04:00" />
+<meta property="article:modified_time" content="2021-09-16T09:13:22-04:00" />
+
+
+    <title>
+  How to properly deploy public hugo website · &gt; h4ckery.b1nx
+</title>
+
+    
+      <link rel="canonical" href="https://zbinx.github.io/posts/hugodeploy/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.8e2b2510f60e1715eae08d113a808dcdaf17f6f711edb9e969be38d0074d240d.css" integrity="sha256-jislEPYOFxXq4I0ROoCNza8X9vcR7bnpab440AdNJA0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      &gt; h4ckery.b1nx
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">/Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">/Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">/About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://zbinx.github.io/posts/hugodeploy/">
+              How to properly deploy public hugo website
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-09-16T09:13:22-04:00'>
+                September 16, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/h4ckery.b1nx/">h4ckery.b1nx</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/hugo/">hugo</a>
+      <span class="separator">•</span>
+    <a href="/categories/git/">git</a>
+      <span class="separator">•</span>
+    <a href="/categories/public-deployment/">public deployment</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/hugo/">hugo</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/public-deployment/">public deployment</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/git/">git</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="deploying-hugo-public-site-via-github-hosting">Deploying Hugo public site via github hosting</h1>
+<hr>
+<p><img src="/hugo.png" alt="hugo.png"></p>
+<h3 id="define-hugo">define Hugo:</h3>
+<p>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.</p>
+<hr>
+<p>At this point you should have 2 repos for your hugo website uploaded to github.</p>
+<ol>
+<li>source code repo</li>
+<li>public deployment repo</li>
+</ol>
+<p>make directories for both repos locally.</p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">mkdir sourceCodeHugoSite
+mkdir publicDeploymentHugoSite
+
+</code></pre></div><p>Then clone them into their respective directories.</p>
+<p><em>Note; You can use submodules here but I found it much easier and less error prone to just create 2 separate directories to manage the public deployment</em></p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sourceCodeDir: git clone linkToSourceCodeRepoOnGithub
+publicSiteDir: git clone linkToPublicRepoOnGithub
+</code></pre></div><p>ALWAYS ALWAYS ALWAYS <strong>git pull</strong> before you start working on either project. ( source code or public ). Failing to do so will break your deployment.</p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">sourceCodeDir: git pull
+publicSiteDir: git pull 
+</code></pre></div><p>At this step you can update your source code website and add content. ( inside source code repo)
+Once finished you need to generate the public site code for deployment.</p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo -d ../directoryOfPublicSite
+</code></pre></div><p>The cmd above will compile the files for public deployment and add to the other public site directory locally.</p>
+<p>Now we are ready to save our changes:</p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git status
+git add .
+git commit -m &#34;comments here&#34;
+git push
+</code></pre></div><p>Should not have any errors in this repo.</p>
+<p>Now change directory to the public site directory:</p>
+<blockquote>
+<p>cd ../publicSiteDir</p>
+</blockquote>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git status
+git add .
+git commit -m &#34;comments here&#34;
+git push
+
+</code></pre></div><p>Now navigate to your github.io page and the changes should be updated shortly. Sometimes you need to clear cookies / cache to see the change.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>*If you are not willing to be a fool, you can't become a master.*</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2022
+         h4ckery_b1nx 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.a350362441276ec5c1671926420497bb8e52b63ead1d51d3c9bc4342d0039526.js" integrity="sha256-o1A2JEEnbsXBZxkmQgSXu45Stj6tHVHTybxDQtADlSY="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

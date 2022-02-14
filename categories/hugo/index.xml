@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/categories/hugo/</link>
+    <description>Recent content in hugo on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Nov 2021 01:05:12 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo cheatsheet and commands</title>
+      <link>https://zbinx.github.io/posts/hugo-cheatsheet/</link>
+      <pubDate>Sun, 28 Nov 2021 01:05:12 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/hugo-cheatsheet/</guid>
+      <description> Basic commands   Create new post: hugo new posts/nameofpost.md
+  Create new post in different directory: hugo new writeups/2019/nameofpost.md
+  Testing website with live updates: hugo server -D
+  Images  Store your images in the content/images directory  </description>
+    </item>
+    
+    <item>
+      <title>Fix: code block unreadable due to config</title>
+      <link>https://zbinx.github.io/posts/highlightfix/</link>
+      <pubDate>Thu, 16 Sep 2021 15:34:45 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/highlightfix/</guid>
+      <description>How to fix the unreadable code block that happens in certain themes / configs:  With certain themes you may encounter an issue where you will have unreadable code block highlighting.
+ Add the following code at the end of your config.toml  [markup] [markup.highlight] anchorLineNos = false codeFences = true guessSyntax = false hl_Lines = &amp;#39;&amp;#39; lineAnchors = &amp;#39;&amp;#39; lineNoStart = 1 lineNos = false lineNumbersInTable = true noClasses = true style = &amp;#39;vim&amp;#39; tabWidth = 4 pygmentsStyle = &amp;#34;vim&amp;#34;  Edit the following 2 lines:  style = &amp;#39;vim&amp;#39; pygmentsStyle = &amp;#34;vim&amp;#34; You can change these to other chroma styles but the vim one worked best for my current config.</description>
+    </item>
+    
+    <item>
+      <title>How to properly deploy public hugo website</title>
+      <link>https://zbinx.github.io/posts/hugodeploy/</link>
+      <pubDate>Thu, 16 Sep 2021 09:13:22 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/hugodeploy/</guid>
+      <description>Deploying Hugo public site via github hosting  define Hugo: Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+ At this point you should have 2 repos for your hugo website uploaded to github.
+ source code repo public deployment repo  make directories for both repos locally.
+mkdir sourceCodeHugoSite mkdir publicDeploymentHugoSite Then clone them into their respective directories.</description>
+    </item>
+    
+  </channel>
+</rss>
