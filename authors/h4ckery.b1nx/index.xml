@@ -6,10 +6,19 @@
     <description>Recent content in H4ckery.B1nx on &gt; h4ckery.b1nx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Feb 2022 23:08:46 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 14 Feb 2022 21:42:39 -0500</lastBuildDate>
     
 	<atom:link href="https://zbinx.github.io/authors/h4ckery.b1nx/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Feb 14th blog</title>
+      <link>https://zbinx.github.io/posts/feb_14/</link>
+      <pubDate>Mon, 14 Feb 2022 21:42:39 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/feb_14/</guid>
+      <description>Testing this blog post to ensure functionality of website testing testing testing blah blah blah blah</description>
+    </item>
     
     <item>
       <title>February Update</title>

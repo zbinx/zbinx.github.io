@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>testing on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/tags/testing/</link>
+    <description>Recent content in testing on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Feb 2022 21:42:39 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Feb 14th blog</title>
+      <link>https://zbinx.github.io/posts/feb_14/</link>
+      <pubDate>Mon, 14 Feb 2022 21:42:39 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/feb_14/</guid>
+      <description>Testing this blog post to ensure functionality of website testing testing testing blah blah blah blah</description>
+    </item>
+    
+  </channel>
+</rss>
