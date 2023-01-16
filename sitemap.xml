@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zbinx.github.io/posts/</loc>
+    <lastmod>2023-01-15T22:53:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zbinx.github.io/posts/updatedockerportainer1-15-23/</loc>
+    <lastmod>2023-01-15T22:53:57-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zbinx.github.io/authors/</loc>
     <lastmod>2022-02-14T21:42:39-05:00</lastmod>
   </url>
@@ -14,11 +24,6 @@
   
   <url>
     <loc>https://zbinx.github.io/authors/h4ckery.b1nx/</loc>
-    <lastmod>2022-02-14T21:42:39-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zbinx.github.io/posts/</loc>
     <lastmod>2022-02-14T21:42:39-05:00</lastmod>
   </url>
   

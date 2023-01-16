@@ -6,10 +6,19 @@
     <description>Recent content in Posts on &gt; h4ckery.b1nx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Feb 2022 21:42:39 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jan 2023 22:53:57 -0500</lastBuildDate>
     
 	<atom:link href="https://zbinx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Updating docker containers with Portainer on linux</title>
+      <link>https://zbinx.github.io/posts/updatedockerportainer1-15-23/</link>
+      <pubDate>Sun, 15 Jan 2023 22:53:57 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/updatedockerportainer1-15-23/</guid>
+      <description>How to update docker containers &amp;amp; portainer on your homelab. I got into the whole Portainer craze when I found out about containers and their uses. This really cool tech lets you manage your servers utilizing containers. In short&amp;hellip;.containers are lightweight, standalone applications that let you quickly build, test and deploy applications. It also helps you manage complex server setups when you want to run different software without worrying about them conflicting with each other.</description>
+    </item>
     
     <item>
       <title>Feb 14th blog</title>
