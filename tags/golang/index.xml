@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/tags/golang/</link>
+    <description>Recent content in golang on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Jan 2023 20:45:59 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coding with Golang course on YouTube</title>
+      <link>https://zbinx.github.io/posts/golangintro-1-30-23/</link>
+      <pubDate>Mon, 30 Jan 2023 20:45:59 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/golangintro-1-30-23/</guid>
+      <description>Youtube: Golang Tutorial for beginners My coding skills have been RUSTY! I think its time to brush up on my Golang. This time it will be with this free Golang tutorial for beginners offered from the great FreeCodeCamp.org folks. I will be doing this whole course over the next couple weeks and will report back with my findings.
+Ultimately I would like to be proficient at a couple languages. I want to create some linux &amp;amp; infosec tools but I would also like to expand my coding skillset to make me a stronger security researcher.</description>
+    </item>
+    
+  </channel>
+</rss>
