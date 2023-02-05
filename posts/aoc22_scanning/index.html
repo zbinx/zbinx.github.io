@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="h4ckery_b1nx">
+    <meta name="description" content="Notes on THM AOC 22 - Day 4 - Scanning">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent of Cyber 2022: Day 04 - Scanning"/>
+<meta name="twitter:description" content="Notes on THM AOC 22 - Day 4 - Scanning"/>
+
+    <meta property="og:title" content="Advent of Cyber 2022: Day 04 - Scanning" />
+<meta property="og:description" content="Notes on THM AOC 22 - Day 4 - Scanning" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zbinx.github.io/posts/aoc22_scanning/" />
+<meta property="article:published_time" content="2023-02-04T16:06:09-05:00" />
+<meta property="article:modified_time" content="2023-02-04T16:06:09-05:00" />
+
+
+    <title>
+  Advent of Cyber 2022: Day 04 - Scanning · &gt; h4ckery.b1nx
+</title>
+
+    
+      <link rel="canonical" href="https://zbinx.github.io/posts/aoc22_scanning/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.8e2b2510f60e1715eae08d113a808dcdaf17f6f711edb9e969be38d0074d240d.css" integrity="sha256-jislEPYOFxXq4I0ROoCNza8X9vcR7bnpab440AdNJA0=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.68.3" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      &gt; h4ckery.b1nx
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">/Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">/Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">/About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://zbinx.github.io/posts/aoc22_scanning/">
+              Advent of Cyber 2022: Day 04 - Scanning
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-02-04T16:06:09-05:00'>
+                February 4, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="/authors/h4ckery.b1nx/">h4ckery.b1nx</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/tryhackme/">tryhackme</a>
+      <span class="separator">•</span>
+    <a href="/categories/scanning/">scanning</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/aoc22/">aoc22</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/scanning/">scanning</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/tryhackme/">tryhackme</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h2 id="learning-objectives">Learning objectives</h2>
+<ul>
+<li>What is Scanning?</li>
+<li>Scanning types</li>
+<li>Scanning techniques</li>
+<li>Scanning tools</li>
+</ul>
+<h2 id="what-is-scanning">What is Scanning?</h2>
+<p><strong>Scanning</strong> is a set of procedures for identifying live hosts,
+ports and services, discovering the OS of target system &amp; identifying vulnerabilities
+&amp; threats in the network. Scanning reveals parts of the attack
+surface for attackers and allows launching targeted attacks to exploit the system.</p>
+<h2 id="scanning-types">Scanning Types</h2>
+<p><strong>Scanning</strong> is classified as either active or passive based on the
+intrusiveness to gathering info about a target system or network.</p>
+<p><strong>Passive Scanning</strong> : scanning network without directly
+interacting with the target. Usually carried out through
+packet capture &amp; analysis with tools like wireshark;
+however this technique only provides basic asset info
+like OS version, network protocols etc&hellip;</p>
+<p><strong>Active Scanning</strong> : Sending packets or queries directly
+to specific assets to retrieve more detailed information.</p>
+<h2 id="scanning-techniques">Scanning Techniques</h2>
+<p><strong>Network Scanning</strong></p>
+<p>Network scanning helps to discover a map of the network.
+Including any live computers or hosts, open ports, IP
+addresses and services running.</p>
+<p><strong>Port Scanning</strong></p>
+<p>As per wikipedia, &ldquo;In computer networking, a port is a number
+assigned to uniquely identify a connection endpoint and to direct
+data to a specific service. A port is a logical construct that
+identifies a specific process or a type of network service.&rdquo;</p>
+<p>Port scanning is a conventional method to examine open ports in
+a network capable of receiving and sending data.
+Port scanning results fall into the following 3 categories:</p>
+<ul>
+<li>Closed Ports: host is not listening to the specific port.</li>
+<li>Open Ports: The host actively accepts a connection on the specific port.</li>
+<li>Filtered Ports: This indicates that the port is open; however,
+the host is not accepting connections or accepting connections as
+per certain criteria like specific source IP address.</li>
+</ul>
+<p><strong>Vulnerability Scanning</strong></p>
+<p>The vuln scanning proacively IDs the networks vulns in an
+automated way that helps determine whether the system may be threatened
+or exploited. Pentesters widely use tools such as Nessus and Acunetix to
+identify loopholes in a system.</p>
+<h2 id="scanning-tools">Scanning Tools</h2>
+<p><strong>Network Mapper (NMAP)</strong></p>
+<p>Nmap can port scan, discover network protocols, id running services, and
+detect OS on live hosts.</p>
+<ul>
+<li>
+<p><strong>TCP SYN Scan</strong>: scanning ports on hosts without completing TCP 3 way handshake. Little more stealthier.</p>
+<p>Usage: <code>nmap -sS ipaddress</code></p>
+</li>
+<li>
+<p><strong>Ping Scan</strong> : allows scanning live hosts without checking for services.</p>
+<p>Usage: <code>nmap -sn ipaddress</code></p>
+</li>
+<li>
+<p><strong>OS scan</strong> : allows scanning of the type of OS running.</p>
+<p>Usage: <code>nmap -O ipaddress</code></p>
+</li>
+<li>
+<p><strong>Detecting Services</strong> : get a list of running services</p>
+<p>Usage: <code>nmap -sV ipaddress</code></p>
+</li>
+</ul>
+<h2 id="nikto-">Nikto</h2>
+<p>Nikto is open-source software that allows scanning websites for vulns.
+It enables looking for subdomains, outdates servers, debug msgs etc on website.</p>
+<p>Usage: <code>nikto -host ipaddress</code></p>
+<h2 id="questions-">Questions:</h2>
+<ul>
+<li>
+<p>What is the name of the HTTP server running on the remote host? <code>apache</code></p>
+<p><em>Run nmap using the Detecting Services flags:</em></p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">nmap -sV ip
+</code></pre></div></li>
+<li>
+<p>What is the name of the service running on port 22 on the QA server? <code>ssh</code></p>
+<p><em>nmap using regular TCP SYN Scan:</em></p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">nmap -sS ip
+</code></pre></div></li>
+<li>
+<p>What flag can you find after successfully accessing the Samba service?
+<code>{THM_SANTA_SMB_SERVER}</code></p>
+<p><em>Found the flag by logging into the smb server with the credentials found from day 3 task. Open up a folder then navigate to:</em></p>
+<div class="highlight"><pre style="color:#ccc;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">smb://ipaddress
+</code></pre></div><ul>
+<li>Username: ubuntu</li>
+<li>Password: S@nta2022</li>
+</ul>
+</li>
+<li>
+<p>What is the password for the username santahr?
+<code>santa25</code></p>
+<p><em>found this in the username list file once logged in</em></p>
+</li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>*If you are not willing to be a fool, you can't become a master.*</p>
+      
+      
+        ©
+        
+          2019 -
+        
+        2023
+         h4ckery_b1nx 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.a350362441276ec5c1671926420497bb8e52b63ead1d51d3c9bc4342d0039526.js" integrity="sha256-o1A2JEEnbsXBZxkmQgSXu45Stj6tHVHTybxDQtADlSY="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

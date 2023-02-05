@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aoc22 on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/tags/aoc22/</link>
+    <description>Recent content in aoc22 on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Feb 2023 16:06:09 -0500</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/tags/aoc22/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Advent of Cyber 2022: Day 04 - Scanning</title>
+      <link>https://zbinx.github.io/posts/aoc22_scanning/</link>
+      <pubDate>Sat, 04 Feb 2023 16:06:09 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/aoc22_scanning/</guid>
+      <description>Learning objectives  What is Scanning? Scanning types Scanning techniques Scanning tools  What is Scanning? Scanning is a set of procedures for identifying live hosts, ports and services, discovering the OS of target system &amp;amp; identifying vulnerabilities &amp;amp; threats in the network. Scanning reveals parts of the attack surface for attackers and allows launching targeted attacks to exploit the system.
+Scanning Types Scanning is classified as either active or passive based on the intrusiveness to gathering info about a target system or network.</description>
+    </item>
+    
+  </channel>
+</rss>

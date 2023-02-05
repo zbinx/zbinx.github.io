@@ -6,10 +6,28 @@
     <description>Recent content in Categories on &gt; h4ckery.b1nx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Feb 2022 23:08:46 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 04 Feb 2023 16:06:09 -0500</lastBuildDate>
     
 	<atom:link href="https://zbinx.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>scanning</title>
+      <link>https://zbinx.github.io/categories/scanning/</link>
+      <pubDate>Sat, 04 Feb 2023 16:06:09 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/scanning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tryhackme</title>
+      <link>https://zbinx.github.io/categories/tryhackme/</link>
+      <pubDate>Sat, 04 Feb 2023 16:06:09 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/categories/tryhackme/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>
@@ -53,15 +71,6 @@
       <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
       
       <guid>https://zbinx.github.io/categories/active-directory-basics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tryhackme</title>
-      <link>https://zbinx.github.io/categories/tryhackme/</link>
-      <pubDate>Sun, 19 Sep 2021 23:06:34 -0400</pubDate>
-      
-      <guid>https://zbinx.github.io/categories/tryhackme/</guid>
       <description></description>
     </item>
     

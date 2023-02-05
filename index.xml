@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Advent of Cyber 2022: Day 04 - Scanning</title>
+      <link>https://zbinx.github.io/posts/aoc22_scanning/</link>
+      <pubDate>Sat, 04 Feb 2023 16:06:09 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/aoc22_scanning/</guid>
+      <description>Learning objectives  What is Scanning? Scanning types Scanning techniques Scanning tools  What is Scanning? Scanning is a set of procedures for identifying live hosts, ports and services, discovering the OS of target system &amp;amp; identifying vulnerabilities &amp;amp; threats in the network. Scanning reveals parts of the attack surface for attackers and allows launching targeted attacks to exploit the system.
+Scanning Types Scanning is classified as either active or passive based on the intrusiveness to gathering info about a target system or network.</description>
+    </item>
+    
+    <item>
       <title>Coding with Golang course on YouTube</title>
       <link>https://zbinx.github.io/posts/golangintro-1-30-23/</link>
       <pubDate>Mon, 30 Jan 2023 20:45:59 -0500</pubDate>

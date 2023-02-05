@@ -6,10 +6,20 @@
     <description>Recent content in tryhackme on &gt; h4ckery.b1nx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Sep 2021 23:06:34 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 04 Feb 2023 16:06:09 -0500</lastBuildDate>
     
 	<atom:link href="https://zbinx.github.io/tags/tryhackme/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Advent of Cyber 2022: Day 04 - Scanning</title>
+      <link>https://zbinx.github.io/posts/aoc22_scanning/</link>
+      <pubDate>Sat, 04 Feb 2023 16:06:09 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/aoc22_scanning/</guid>
+      <description>Learning objectives  What is Scanning? Scanning types Scanning techniques Scanning tools  What is Scanning? Scanning is a set of procedures for identifying live hosts, ports and services, discovering the OS of target system &amp;amp; identifying vulnerabilities &amp;amp; threats in the network. Scanning reveals parts of the attack surface for attackers and allows launching targeted attacks to exploit the system.
+Scanning Types Scanning is classified as either active or passive based on the intrusiveness to gathering info about a target system or network.</description>
+    </item>
     
     <item>
       <title>THM room: Active Directory Basics</title>
