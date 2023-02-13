@@ -6,10 +6,46 @@
     <description>Recent content in Tags on &gt; h4ckery.b1nx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Feb 2023 16:06:09 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 12 Feb 2023 23:24:05 -0500</lastBuildDate>
     
 	<atom:link href="https://zbinx.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>id_rsa</title>
+      <link>https://zbinx.github.io/tags/id_rsa/</link>
+      <pubDate>Sun, 12 Feb 2023 23:24:05 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/tags/id_rsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>public keys</title>
+      <link>https://zbinx.github.io/tags/public-keys/</link>
+      <pubDate>Sun, 12 Feb 2023 23:24:05 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/tags/public-keys/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://zbinx.github.io/tags/ssh/</link>
+      <pubDate>Sun, 12 Feb 2023 23:24:05 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh server</title>
+      <link>https://zbinx.github.io/tags/ssh-server/</link>
+      <pubDate>Sun, 12 Feb 2023 23:24:05 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/tags/ssh-server/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>aoc22</title>

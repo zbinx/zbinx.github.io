@@ -6,10 +6,20 @@
     <description>Recent content in Posts on &gt; h4ckery.b1nx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Feb 2023 16:06:09 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 12 Feb 2023 23:24:05 -0500</lastBuildDate>
     
 	<atom:link href="https://zbinx.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Generating &amp; Using Public Key Authentication</title>
+      <link>https://zbinx.github.io/posts/sshkeys/</link>
+      <pubDate>Sun, 12 Feb 2023 23:24:05 -0500</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/sshkeys/</guid>
+      <description>You can configure your Linux server to use public key authentication instead of a password by following these steps:   Generate a public and private key pair on your local machine:
+ You can use the ssh-keygen command to generate a new key pair. This will create two files in the ~/.ssh directory: a private key (id_rsa) and a public key (id_rsa.pub).    Copy the public key to the server:</description>
+    </item>
     
     <item>
       <title>Advent of Cyber 2022: Day 04 - Scanning</title>
