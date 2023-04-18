@@ -6,9 +6,19 @@
     <description>Recent content in Series on &gt; h4ckery.b1nx</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Mon, 17 Apr 2023 23:15:04 -0400</lastBuildDate>
     
 	<atom:link href="https://zbinx.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>valheim</title>
+      <link>https://zbinx.github.io/series/valheim/</link>
+      <pubDate>Mon, 17 Apr 2023 23:15:04 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/series/valheim/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
