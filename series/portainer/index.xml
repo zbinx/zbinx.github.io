@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>portainer on &gt; h4ckery.b1nx</title>
+    <link>https://zbinx.github.io/series/portainer/</link>
+    <description>Recent content in portainer on &gt; h4ckery.b1nx</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 18 Apr 2023 23:06:10 -0400</lastBuildDate>
+    
+	<atom:link href="https://zbinx.github.io/series/portainer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using filebrowser in portainer to access fileserver</title>
+      <link>https://zbinx.github.io/posts/filebrowser-portainer-fileserver/</link>
+      <pubDate>Tue, 18 Apr 2023 23:06:10 -0400</pubDate>
+      
+      <guid>https://zbinx.github.io/posts/filebrowser-portainer-fileserver/</guid>
+      <description>I run a Samba server on my home server to backup files, host pictures, movies, and more. Recently, I discovered a new feature called &amp;ldquo;filebrowser&amp;rdquo; that adds a web interface to access files on my server in a web browser of my choice. With filebrowser, I can simply browse to the URL of the filebrowser address, log in with my username, and then have access to whatever files the admin allows.</description>
+    </item>
+    
+  </channel>
+</rss>
